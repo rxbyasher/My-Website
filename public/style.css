@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+nav {
+    background-color: #007199;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+.hero {
+    flex: 1;
+    text-align: center;
+    padding: 140px 20px;
+    background-color: #e1f3f8;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.content {
+    width: min(750px, calc(100% - 32px));
+    margin: 70px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    color: #007199;
+}
+
+.content h2 {
+    margin: 25px 0 10px;
+}
+
+.content p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.btn,
+button {
+    display: inline-block;
+    background-color: #007199;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #00536f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007199;
+    color: white;
+}
+
+@media (max-width: 520px) {
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav a {
+        margin: 0 16px 0 0;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Website</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <h2>My Website</h2>
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact" aria-current="page">Contact</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Contact Us</h1>
+        <p>Send us a message using the form below.</p>
+
+        <form action="/contact" method="POST">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message"
+                      placeholder="Write your message"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
